@@ -12,7 +12,7 @@ export default function ListItem({ post }: Props) {
 
   return (
     <li className="mt-4 text-2xl dark:text-white/90">
-      <Link className="underline hover:text-black/70 dark:hover:text-white" href={`/posts/${id}`}>
+      <Link href={`/posts/${id}`} className="underline hover:text-black/70 dark:hover:text-white">
         {title}
       </Link>
       <br />
