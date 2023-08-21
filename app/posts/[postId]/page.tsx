@@ -9,6 +9,17 @@ type Props = {
   }
 }
 
+// Converts SSR to SSG page
+export function generateStaticParams() {
+  const posts = getSortedPostsData()
+
+  return posts.map((post) => {
+    return {
+      postId: post.id,
+    }
+  })
+}
+
 export function generateMetadata(props: Props) {
   const {
     params: { postId },
