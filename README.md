@@ -1,4 +1,4 @@
-Simple blog website using Next JS with latest like:
+Simple blog website using Next JS with latest features like:
 
 1. SSG using generateStaticParams()
 2. SSR
